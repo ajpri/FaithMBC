@@ -8,6 +8,13 @@ function hashHandler() {
               document.getElementById("content").innerHTML=client.responseText;
             }
             client.send();
+          }else if(hash == "#history"){
+            var client = new XMLHttpRequest();
+            client.open('GET', '/history.html');
+            client.onreadystatechange = function() {
+              document.getElementById("content").innerHTML=client.responseText;
+            }
+            client.send();
           }else{
             document.getElementById("content").innerHTML="";
           }
