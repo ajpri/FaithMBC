@@ -25,26 +25,9 @@
 
 
       </div>
-      <script>
 
-        function hashHandler() {
-          console.log('The hash has changed!');
-          var hash = location.hash;
-          if(hash=="#doctrine"){
-            var client = new XMLHttpRequest();
-            client.open('GET', '/doctrine.html');
-            client.onreadystatechange = function() {
-              document.getElementById("content").innerHTML=client.responseText;
-            }
-            client.send();
-          }else{
-            document.getElementById("content").innerHTML="";
-          }
-        }
+      <script src="nav.js" type="text/javascript"></script>
 
-        window.addEventListener('hashchange', hashHandler, false);
-
-      </script>
       <div class="main" id="content">
         <script>window.location.href = '/#home';</script>
       </div>
@@ -77,7 +60,7 @@
                     </p>
                   </td>
                   <td width="10%">
-                    <img src="https://static.wixstatic.com/media/e85426_f5b53cd6dbea47479a684118d0e0ea28~mv2_d_2754_1866_s_2.png/v1/fill/w_126,h_85,al_c,q_80,usm_0.66_1.00_0.01/ababluelogo.webp" alt="ABA" height="60" align="right">
+                    <img src="/ababluelogo.webp" alt="ABA" height="60" align="right">
                   </td>
                 </tr>
               </table>
